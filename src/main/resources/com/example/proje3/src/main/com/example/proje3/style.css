@@ -1,0 +1,113 @@
+/* Light Mode */
+.root {
+    -fx-background-color: #f0f2f5;
+}
+
+.light-mode {
+    -fx-background-color: #f0f2f5;
+}
+
+.light-mode .text-area {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e4e6eb;
+    -fx-border-width: 1;
+    -fx-font-size: 14px;
+}
+
+.light-mode .text-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #e4e6eb;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+.light-mode .button {
+    -fx-background-color: #0084ff;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 8 20;
+}
+
+.light-mode .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e4e6eb;
+    -fx-border-width: 1;
+}
+
+.light-mode .label {
+    -fx-text-fill: black;
+}
+
+/* Dark Mode */
+.dark-mode {
+    -fx-background-color: #242526;
+}
+/* Dark Mode */
+.dark-mode .text-area {
+    -fx-background-color: gray;
+    -fx-text-fill: black;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #4e4f50;
+    -fx-border-width: 1;
+    -fx-font-size: 14px;
+}
+
+.dark-mode .text-field {
+    -fx-background-color: #3a3b3c;
+    -fx-text-fill:black;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #4e4f50;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+.dark-mode .button {
+    -fx-background-color: #0084ff;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 8 20;
+}
+
+.dark-mode .list-view {
+    -fx-background-color: #3a3b3c;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #4e4f50;
+    -fx-border-width: 1;
+}
+
+.dark-mode .list-view .list-cell {
+    -fx-background-color: #3a3b3c;
+    -fx-text-fill: white;
+}
+
+.dark-mode .list-view .list-cell:filled:selected {
+    -fx-background-color: #4e4f50;
+}
+
+.dark-mode .label {
+    -fx-text-fill: white;
+}
+
+
+.theme-toggle {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-padding: 5 10;
+}

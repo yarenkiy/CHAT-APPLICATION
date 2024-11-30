@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="rootPane" spacing="10" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proje3.ClientGUIController"
+
+      stylesheets="@src/main/com/example/proje3/style.css">
+    <HBox spacing="10">
+        <ListView fx:id="userListView" prefWidth="200" prefHeight="400"/>
+        <VBox spacing="10" HBox.hgrow="ALWAYS">
+            <TextArea fx:id="chatArea" VBox.vgrow="ALWAYS" editable="false"/>
+            <HBox spacing="10">
+                <TextField fx:id="messageField" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="sendButton" text="Send" onAction="#handleSend"/>
+            </HBox>
+        </VBox>
+    </HBox>
+    <HBox spacing="10">
+        <Button fx:id="requestChatButton" text="Request Chat" onAction="#handleRequestChat"/>
+        <Button fx:id="leaveChatButton" text="Leave Chat" onAction="#handleLeaveChat"/>
+        <ToggleButton fx:id="themeToggle" text="Dark Mode" onAction="#toggleTheme"/>
+    </HBox>
+</VBox>
+
+
+
+

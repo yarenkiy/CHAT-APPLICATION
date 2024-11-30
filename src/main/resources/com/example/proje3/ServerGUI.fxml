@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+        <?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx/8"
+      fx:controller="com.example.proje3.ServerGUIController"
+      spacing="10"
+      styleClass="light-mode"
+      stylesheets="@src/main/com/example/proje3/style.css"
+      fx:id="rootPane"
+      prefWidth="800"
+      prefHeight="600">
+
+<padding>
+    <Insets top="10" right="10" bottom="10" left="10"/>
+</padding>
+
+<HBox alignment="CENTER_LEFT" spacing="10">
+    <Label text="Server Control Panel"
+           style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+    <Region HBox.hgrow="ALWAYS" />
+    <ToggleButton fx:id="themeToggle"
+                  text="Dark Mode"
+                  styleClass="theme-toggle"
+                  onAction="#toggleTheme"/>
+</HBox>
+
+<HBox spacing="10" VBox.vgrow="ALWAYS">
+    <VBox spacing="10" prefWidth="250">
+        <Label text="Connected Clients"
+               style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+        <ListView fx:id="clientListView"
+                  VBox.vgrow="ALWAYS"/>
+    </VBox>
+
+    <VBox spacing="10" HBox.hgrow="ALWAYS">
+        <Label text="Server Log"
+               style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+        <TextArea fx:id="logArea"
+                  VBox.vgrow="ALWAYS"
+                  editable="false"
+                  wrapText="true"/>
+    </VBox>
+</HBox>
+
+</VBox>
